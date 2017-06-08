@@ -121,3 +121,108 @@
     -webkit-animation: ball_grid .7s .1s linear infinite;
             animation: ball_grid .7s .1s linear infinite;
 }
+
+/***********************THIRD***************************/
+.ball_rotate div{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_rotate 1s linear infinite;
+            animation: ball_rotate 1s linear infinite;
+}
+.ball_rotate div:before,
+.ball_rotate div:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_rotate 1s linear infinite;
+            animation: ball_rotate 1s linear infinite;
+}
+.ball_rotate div:before{
+    top: 0;
+    left: -28px;
+}
+.ball_rotate div:after{
+    top: 0;
+    right: -28px;
+}
+@keyframes ball_rotate {
+    0%{
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform: rotate(90DEG) scale(0.6);
+                transform: rotate(90DEG) scale(0.6);
+        opacity: 0.8;
+    }
+    100%{
+        -webkit-transform: rotate(360DEG) scale(1);
+                transform: rotate(360DEG) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/***********************FORTH***************************/
+.ball_line div{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_line 1s linear infinite;
+            animation: ball_line 1s linear infinite;
+}
+
+@keyframes ball_line {
+    0%{
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+    }
+    25%{
+        -webkit-transform: rotate(90DEG) scale(1.1);
+        transform: rotate(90DEG) scale(1.1);
+    }
+    50%{
+        -webkit-transform: rotate(180DEG) scale(1.2);
+        transform: rotate(180DEG) scale(1.2);
+    }
+    75%{
+        -webkit-transform: rotate(270DEG) scale(1.1);
+        transform: rotate(270DEG) scale(1.1);
+    }
+    100%{
+        -webkit-transform: rotate(360DEG) scale(1);
+        transform: rotate(360DEG) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
