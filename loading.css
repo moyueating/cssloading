@@ -216,13 +216,236 @@
     }
 }
 
+/******************************FIFTH************************************/
+.cube_transition{
+    position: relative;
+    -webkit-transform: translate(-25px, -25px);
+        -ms-transform: translate(-25px, -25px);
+            transform: translate(-25px, -25px);
+}
+.cube_transition div{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: cube_transition 1.6s 0s ease-in-out infinite;
+            animation: cube_transition 1.6s 0s ease-in-out infinite;
+}
+.cube_transition div:nth-child(2){
+    -webkit-animation-delay: -0.8s ;
+            animation-delay: -0.8s ;
+}
 
+@keyframes cube_transition {
+    25%{
+        -webkit-transform: translateX(50px) scale(0.5) rotate(90DEG);
+                transform: translateX(50px) scale(0.5) rotate(90DEG);
+    }
+    50%{
+        -webkit-transform: translate(50px,50px) rotate(180DEG);
+                transform: translate(50px,50px) rotate(180DEG);
+    }
+    75%{
+        -webkit-transform: translateY(50px) scale(0.5) rotate(270DEG);
+                transform: translateY(50px) scale(0.5) rotate(270DEG);
+    }
+    100%{
+        -webkit-transform: rotate(360DEG);
+                transform: rotate(360DEG);
+    }
+}
 
+/**************************************SIXTH********************************************/
+.ball_five{
 
+}
+.ball_five div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: #fff;
+    display: inline-block;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
 
+.ball_five div:nth-child(2n){
+    -webkit-animation: ball_five_up 1s 0s cubic-bezier(.15, .46, .9, .6) infinite;
+            animation: ball_five_up 1s 0s cubic-bezier(.15, .46, .9, .6) infinite;
+}
+.ball_five div:nth-child(2n+1){
+    -webkit-animation: ball_five_down 1s 0s cubic-bezier(.15, .46, .9, .6) infinite;
+            animation: ball_five_down 1s 0s cubic-bezier(.15, .46, .9, .6) infinite;
+}
 
+@keyframes ball_five_up{
+    0%{
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    25%{
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+    50%{
+        -webkit-transform: scale(0.4);
+                transform: scale(0.4);
+    }
+    75%{
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    100%{
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+    }
+}
+@keyframes ball_five_down{
+    0%{
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    25%{
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    50%{
+        -webkit-transform: scale(0.4);
+                transform: scale(0.4);
+    }
+    75%{
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+    100%{
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+    }
+}
 
+/*******************************SEVENTH******************************/
+.ball_triangle{
+    position: relative;
+    -webkit-transform: translate(-50px, -25px);
+            transform: translate(-50px, -25px);
+}
+.ball_triangle div{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_triangle 1.2s 0s linear infinite;
+            animation: ball_triangle 1.2s 0s linear infinite;
+}
+.ball_triangle div:nth-child(1){
+    top: 50px;
 
+}
+.ball_triangle div:nth-child(2){
+    left: 25px;
+    animation-delay: -0.4s;
+}
+.ball_triangle div:nth-child(3){
+    top: 50px;
+    left: 50px;
+    animation-delay: -8s;
+}
 
+@keyframes ball_triangle {
+    33%{
+        -webkit-transform: translate(25px,-50px);
+                transform: translate(25px,-50px);
+    }
+    66%{
+        -webkit-transform: translate(50px,0);
+                transform: translate(50px,0);
+    }
+    100%{
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
 
+/*******************************EIGHTH******************************/
+.ball_triangle_path{
+    position: relative;
+    -webkit-transform: translate(-30px, -40px);
+            transform: translate(-30px, -40px);
+}
+.ball_triangle_path div{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.ball_triangle_path div:nth-child(1){
+    top: 50px;
+    -webkit-animation: ball_triangle_path1 1.5s 0s linear infinite;
+            animation: ball_triangle_path1 1.5s 0s linear infinite;
+}
+.ball_triangle_path div:nth-child(2){
+    left: 25px;
+    -webkit-animation: ball_triangle_path2 1.5s 0s linear infinite;
+            animation: ball_triangle_path2 1.5s 0s linear infinite;
+}
+.ball_triangle_path div:nth-child(3){
+    top: 50px;
+    left: 50px;
+    -webkit-animation: ball_triangle_path3 1.5s 0s linear infinite;
+            animation: ball_triangle_path3 1.5s 0s linear infinite;
+}
+
+@keyframes ball_triangle_path1 {
+    33%{
+        -webkit-transform: translate(25px,-50px);
+                transform: translate(25px,-50px);
+    }
+    66%{
+        -webkit-transform: translate(50px,0);
+                transform: translate(50px,0);
+    }
+    100%{
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
+@keyframes ball_triangle_path2 {
+    33%{
+        -webkit-transform: translate(25px,50px);
+                transform: translate(25px,50px);
+    }
+    66%{
+        -webkit-transform: translate(-25px,50px);
+                transform: translate(-25px,50px);
+    }
+    100%{
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
+@keyframes ball_triangle_path3 {
+    33%{
+        -webkit-transform: translate(-50px,0);
+                transform: translate(-50px,0);
+    }
+    66%{
+        -webkit-transform: translate(-25px,-50px);
+                transform: translate(-25px,-50px);
+    }
+    100%{
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
 
