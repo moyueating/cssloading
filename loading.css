@@ -501,3 +501,55 @@
     }
 
 }
+
+/*******************************TEN**********************************/
+.ball_concentric>div{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    position: relative;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_concentric 1s linear infinite;
+            animation: ball_concentric 1s linear infinite;
+}
+.ball_concentric>div>div{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes ball_concentric {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    25%{
+        -webkit-transform: rotate(90DEG) scale(1.1);
+                transform: rotate(90DEG) scale(1.1);
+    }
+    50%{
+        -webkit-transform: rotate(180DEG) scale(1.2);
+                transform: rotate(180DEG) scale(1.2);
+    }
+    75%{
+        -webkit-transform: rotate(270DEG) scale(1.1);
+                transform: rotate(270DEG) scale(1.1);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+
+
+
