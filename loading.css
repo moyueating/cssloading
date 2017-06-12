@@ -653,12 +653,12 @@
             perspective: 100px;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    -webkit-animation: square 2s cubic-bezier(.09, .57, .49, .9) infinite;
-            animation: square 2s cubic-bezier(.09, .57, .49, .9) infinite;
+    -webkit-animation: square 3s cubic-bezier(.09, .57, .49, .9) infinite;
+            animation: square 3s cubic-bezier(.09, .57, .49, .9) infinite;
 }
 
 @keyframes square {
-    0%{
+    25%{
         -webkit-transform: rotateX(180deg) rotateY(0);
                 transform: rotateX(180deg) rotateY(0);
     }
@@ -675,5 +675,86 @@
                 transform: rotateX(0) rotateY(0);
     }
 }
+
+/*****************************************FOURTEENTH*****************************************/
+.ball_spin_fade{
+    position: relative;
+    top: -10px;
+    left: -5px;
+
+}
+.ball_spin_fade div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_spin_fade 1.2s linear infinite;
+            animation: ball_spin_fade 1.2s linear infinite;
+
+}
+.ball_spin_fade div:nth-child(1){
+    top: -20px;
+    left: 0;
+}
+.ball_spin_fade div:nth-child(2){
+    top: -14.14214px;
+    left: 14.14214px;
+    -webkit-animation-delay: 0.15s;
+            animation-delay: 0.15s;
+}
+.ball_spin_fade div:nth-child(3){
+    top: 0;
+    left: 20px;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+.ball_spin_fade div:nth-child(4){
+    top: 14.14214px;
+    left: 14.14214px;
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+}
+.ball_spin_fade div:nth-child(5){
+    top: 20px;
+    left: 0;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
+.ball_spin_fade div:nth-child(6){
+    top: 14.14214px;
+    left: -14.14214px;
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+}
+.ball_spin_fade div:nth-child(7){
+    top: 0;
+    left: -20px;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+}
+.ball_spin_fade div:nth-child(8){
+    top: -14.14214px;
+    left: -14.14214px;
+    -webkit-animation-delay: 1.05s;
+            animation-delay: 1.05s;
+}
+
+@keyframes ball_spin_fade {
+    50%{
+        opacity: 0.3;
+        -webkit-transform: scale(0.4);
+                transform: scale(0.4);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+
 
 
