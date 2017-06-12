@@ -551,12 +551,12 @@
 }
 
 /*******************************ELEVEN**********************************/
-.ball_opacity{
+.ball_scale{
     position: relative;
     top: -25px;
     left: -25px;
 }
-.ball_opacity div{
+.ball_scale div{
     width: 40px;
     height: 40px;
     background-color: #fff;
@@ -567,21 +567,20 @@
     border-radius: 50%;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    -webkit-animation: ball_opacity 1.5s linear infinite;
-            animation: ball_opacity 1.5s linear infinite;
-
+    -webkit-animation: ball_scale 1.5s linear infinite;
+            animation: ball_scale 1.5s linear infinite;
 }
 
-.ball_opacity div:nth-child(2){
+.ball_scale div:nth-child(2){
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
 }
-.ball_opacity div:nth-child(3){
+.ball_scale div:nth-child(3){
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-@keyframes ball_opacity {
+@keyframes ball_scale {
     0%{
         -webkit-transform: scale(0);
                 transform: scale(0);
@@ -596,3 +595,85 @@
         opacity: 0;
     }
 }
+
+/*******************************TWELVE**********************************/
+.ball_scale_line {
+    position: relative;
+    top: -25px;
+    left: -20px;
+}
+.ball_scale_line div{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    border: 3px solid #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_scale_line 1.5s linear infinite;
+            animation: ball_scale_line 1.5s linear infinite;
+}
+
+.ball_scale_line div:nth-child(2){
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+.ball_scale_line div:nth-child(3){
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+@keyframes ball_scale_line {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/*******************************************THIRTEENTH***************************************/
+.square div{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #0CD;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: square 2s cubic-bezier(.09, .57, .49, .9) infinite;
+            animation: square 2s cubic-bezier(.09, .57, .49, .9) infinite;
+}
+
+@keyframes square {
+    0%{
+        -webkit-transform: rotateX(180deg) rotateY(0);
+                transform: rotateX(180deg) rotateY(0);
+    }
+    50%{
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+                transform: rotateX(180deg) rotateY(180deg);
+    }
+    75%{
+        -webkit-transform: rotateX(0) rotateY(180deg);
+                transform: rotateX(0) rotateY(180deg);
+    }
+    100%{
+        -webkit-transform: rotateX(0) rotateY(0);
+                transform: rotateX(0) rotateY(0);
+    }
+}
+
+
