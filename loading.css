@@ -681,7 +681,6 @@
     position: relative;
     top: -10px;
     left: -5px;
-
 }
 .ball_spin_fade div{
     width: 10px;
@@ -693,7 +692,6 @@
             animation-fill-mode: both;
     -webkit-animation: ball_spin_fade 1.2s linear infinite;
             animation: ball_spin_fade 1.2s linear infinite;
-
 }
 .ball_spin_fade div:nth-child(1){
     top: -20px;
@@ -755,6 +753,89 @@
     }
 }
 
+/***********************************FIFTEENTH***************************************/
+.square_spin_fade{
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
 
+.square_spin_fade div{
+    width: 4px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: square_spin_fade 1.2s linear infinite;
+            animation: square_spin_fade 1.2s linear infinite;
+}
+.square_spin_fade div:nth-child(1){
+    top: -20px;
+    left: 0;
+}
+.square_spin_fade div:nth-child(2){
+    top: -14.14214px;
+    left: 14.14214px;
+    -webkit-animation-delay: 0.15s;
+            animation-delay: 0.15s;
+    -webkit-transform: rotate(45DEG);
+            transform: rotate(45DEG);
+}
+.square_spin_fade div:nth-child(3){
+    top: 0;
+    left: 20px;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-transform: rotate(90DEG);
+            transform: rotate(90DEG);
+}
+.square_spin_fade div:nth-child(4){
+    top: 14.14214px;
+    left: 14.14214px;
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+    -webkit-transform: rotate(135DEG);
+            transform: rotate(135DEG);
+}
+.square_spin_fade div:nth-child(5){
+    top: 20px;
+    left: 0;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
+.square_spin_fade div:nth-child(6){
+    top: 14.14214px;
+    left: -14.14214px;
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+    -webkit-transform: rotate(-135DEG);
+            transform: rotate(-135DEG);
+}
+.square_spin_fade div:nth-child(7){
+    top: 0;
+    left: -20px;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+    -webkit-transform: rotate(-90DEG);
+            transform: rotate(-90DEG);
+}
+.square_spin_fade div:nth-child(8){
+    top: -14.14214px;
+    left: -14.14214px;
+    -webkit-animation-delay: 1.05s;
+            animation-delay: 1.05s;
+    -webkit-transform: rotate(-45DEG);
+            transform: rotate(-45DEG);
+}
+
+@keyframes square_spin_fade {
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
