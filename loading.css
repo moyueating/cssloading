@@ -900,10 +900,169 @@
 
 
 
+/************************************SEVENTEENTH******************************************/
+.square_volume_left{
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.square_volume_left div{
+    width: 4px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: square_volume_left .8s linear infinite;
+            animation: square_volume_left .8s linear infinite;
+}
+
+.square_volume_left div:nth-child(1){
+    top: 0;
+    left: -20px;
+}
+.square_volume_left div:nth-child(2){
+    top: 0;
+    left: -10px;
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+}
+.square_volume_left div:nth-child(3){
+    top: 0;
+    left: 0;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+.square_volume_left div:nth-child(4){
+    top: 0;
+    left: 10px;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+.square_volume_left div:nth-child(5){
+    top: 0;
+    left: 20px;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+
+@keyframes square_volume_left {
+    0%{
+        -webkit-transform: scaleY(1);
+    }
+    50%{
+        -webkit-transform: scaleY(0.3);
+    }
+    100%{
+        -webkit-transform: scaleY(1);
+    }
+}
 
 
+/***************************************EIGHTEENTH**************************************************/
 
+.ball_eating{
+    position: relative;
+    top: -25px;
+    left: -20px;
+}
+.ball_eating div:nth-child(1),
+.ball_eating div:nth-child(2){
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 25px solid #fff;
+    border-radius: 50%;
+    border-right-color: transparent;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.ball_eating div:nth-child(3),
+.ball_eating div:nth-child(4),
+.ball_eating div:nth-child(5){
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_eating_move .9s linear infinite;
+            animation: ball_eating_move .9s linear infinite;
+}
+.ball_eating div:nth-child(3){
+    top: 20px;
+    left: 50px;
+}
+.ball_eating div:nth-child(4){
+    top: 20px;
+    left: 70px;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+.ball_eating div:nth-child(5){
+    top: 20px;
+    left: 90px;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
 
+@keyframes ball_eating_move {
+    0%{
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        -webkit-transform: translate(-40px, 0);
+        transform: translate(-40px, 0);
+    }
+}
+
+.ball_eating div:nth-child(1){
+    -webkit-animation: ball_eating_up .5s linear infinite;
+            animation: ball_eating_up .5s linear infinite;
+}
+
+.ball_eating div:nth-child(2){
+    -webkit-animation: ball_eating_down .5s linear infinite;
+            animation: ball_eating_down .5s linear infinite;
+}
+
+@keyframes ball_eating_up {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    50%{
+        -webkit-transform: rotate(90DEG);
+                transform: rotate(90DEG);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@keyframes ball_eating_down {
+    0%{
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50%{
+        -webkit-transform: rotate(-90DEG);
+        transform: rotate(-90DEG);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
 
 
 
