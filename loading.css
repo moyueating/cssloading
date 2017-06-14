@@ -842,7 +842,7 @@
 /************************************SIXTEENTH******************************************/
 .square_volume_mid{
     position: relative;
-    top: -10px;
+    top: -15px;
     left: -10px;
 }
 
@@ -903,7 +903,7 @@
 /************************************SEVENTEENTH******************************************/
 .square_volume_left{
     position: relative;
-    top: -10px;
+    top: -15px;
     left: -10px;
 }
 
@@ -1068,6 +1068,8 @@
 /*************************************NINETEENTH****************************************/
 .ball_line_rotate{
     position: relative;
+    top: -20px;
+    left: -15px;
 }
 
 .ball_line_rotate div{
