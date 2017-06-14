@@ -1065,12 +1065,49 @@
 }
 
 
+/*************************************NINETEENTH****************************************/
+.ball_line_rotate{
+    position: relative;
+}
 
+.ball_line_rotate div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    background-color: transparent;
+}
+.ball_line_rotate div:nth-child(1){
+    opacity: 0.3 ;
+}
+.ball_line_rotate div:nth-child(2){
+    border-color: transparent;
+    border-right-color: #fff;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_line_rotate .8s linear infinite;
+            animation: ball_line_rotate .8s linear infinite;
+}
 
-
-
-
-
+@keyframes ball_line_rotate {
+    25%{
+        -webkit-transform: rotate(90DEG);
+                transform: rotate(90DEG);
+    }
+    50%{
+        -webkit-transform: rotate(180DEG);
+                transform: rotate(180DEG);
+    }
+    75%{
+        -webkit-transform: rotate(270DEG);
+                transform: rotate(270DEG);
+    }
+    100%{
+        -webkit-transform: rotate(360DEG);
+                transform: rotate(360DEG);
+    }
+}
 
 
 
