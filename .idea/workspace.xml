@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aae44198-b5ea-4151-9053-5de504dfce3d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loading.css" afterPath="$PROJECT_DIR$/loading.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state relative-caret-position="429">
+              <caret line="151" column="27" lean-forward="false" selection-start-line="151" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="loading.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loading.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="844" column="12" lean-forward="false" selection-start-line="844" selection-start-column="12" selection-end-line="844" selection-end-column="12" />
+            <state relative-caret-position="358">
+              <caret line="967" column="13" lean-forward="false" selection-start-line="967" selection-start-column="13" selection-end-line="967" selection-end-column="13" />
               <folding>
                 <element signature="e#10803#11161#0" expanded="false" />
                 <element signature="e#11527#11889#0" expanded="false" />
@@ -100,7 +101,9 @@
       <find>ball_rotate</find>
       <find>25</find>
       <find>ball_eat</find>
+      <find>square_volume_mid</find>
       <find>ball_line_rotate</find>
+      <find>.ball_eating</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,13 +168,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/load0409/28个纯css3 加载loading动画特效" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/css/index.html" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -250,7 +254,7 @@
       <workItem from="1496986906948" duration="8424000" />
       <workItem from="1497249626643" duration="7974000" />
       <workItem from="1497319693527" duration="8609000" />
-      <workItem from="1497423812335" duration="1552000" />
+      <workItem from="1497423812335" duration="3608000" />
     </task>
     <task id="LOCAL-00001" summary="第三第四">
       <created>1496896669540</created>
@@ -350,11 +354,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497426233613</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="change position">
+      <created>1497426357578</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1497426357578</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48346000" />
+    <option name="totallyTimeSpent" value="50402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -414,7 +425,8 @@
     <MESSAGE value="READE" />
     <MESSAGE value="15" />
     <MESSAGE value="19" />
-    <option name="LAST_COMMIT_MESSAGE" value="19" />
+    <MESSAGE value="change position" />
+    <option name="LAST_COMMIT_MESSAGE" value="change position" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,10 +733,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="151" column="27" lean-forward="false" selection-start-line="151" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -745,18 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loading.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="844" column="12" lean-forward="false" selection-start-line="844" selection-start-column="12" selection-end-line="844" selection-end-column="12" />
+        <state relative-caret-position="358">
+          <caret line="967" column="13" lean-forward="false" selection-start-line="967" selection-start-column="13" selection-end-line="967" selection-end-column="13" />
           <folding>
             <element signature="e#10803#11161#0" expanded="false" />
             <element signature="e#11527#11889#0" expanded="false" />

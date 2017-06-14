@@ -965,7 +965,7 @@
 .ball_eating{
     position: relative;
     top: -25px;
-    left: -20px;
+    left: -25px;
 }
 .ball_eating div:nth-child(1),
 .ball_eating div:nth-child(2){
@@ -986,6 +986,8 @@
     width: 10px;
     height: 10px;
     position: absolute;
+    top: 20px;
+    left: 90px;
     background-color: #fff;
     border-radius: 50%;
     -webkit-animation-fill-mode: both;
@@ -994,33 +996,25 @@
             animation: ball_eating_move .9s linear infinite;
 }
 .ball_eating div:nth-child(3){
-    top: 20px;
-    left: 50px;
-}
-.ball_eating div:nth-child(4){
-    top: 20px;
-    left: 70px;
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
 }
-.ball_eating div:nth-child(5){
-    top: 20px;
-    left: 90px;
+.ball_eating div:nth-child(4){
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
 }
+.ball_eating div:nth-child(5){
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+}
 
 @keyframes ball_eating_move {
-    0%{
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
     50% {
         opacity: 0.7;
     }
     100% {
-        -webkit-transform: translate(-40px, 0);
-        transform: translate(-40px, 0);
+        -webkit-transform: translate(-80px, 0);
+        transform: translate(-80px, 0);
     }
 }
 
