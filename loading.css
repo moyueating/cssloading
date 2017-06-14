@@ -763,6 +763,7 @@
 .square_spin_fade div{
     width: 4px;
     height: 12px;
+    border-radius: 2px;
     background-color: #fff;
     position: absolute;
     -webkit-animation-fill-mode: both;
