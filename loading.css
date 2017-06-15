@@ -1106,8 +1106,127 @@
     }
 }
 
+/************************************TWENTIETH*********************************************/
+.ball_3d_rotate{
+    position: relative;
+    top: -25px;
+    left: -20px;
+}
+
+.ball_3d_rotate div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    top: 0;
+    left: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_3d_rotate 2s linear infinite;
+            animation: ball_3d_rotate 2s linear infinite;
+}
+.ball_3d_rotate div:nth-child(1){
+    border: 5px solid #f4f4f4;
+    box-shadow: 0 0 5px 0 #009933;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+.ball_3d_rotate div:nth-child(2){
+    border: 5px solid #009933;
+    box-shadow: 0 0 5px 0 #f4f4f4;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+
+@keyframes ball_3d_rotate {
+    0%{
+        -webkit-transform: rotateY(0DEG);
+                transform: rotate(0DEG);
+    }
+    50%{
+        -webkit-transform: rotateY(180DEG);
+                transform: rotateY(180DEG);
+    }
+    100%{
+        -webkit-transform: rotateY(360DEG);
+                transform: rotateY(360DEG);
+    }
+}
 
 
+/*********************************************21*****************************************/
+.ball_ellipse{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_ellipse_parent 2.4s ease infinite;
+            animation: ball_ellipse_parent 2.4s ease infinite;
+}
+.ball_ellipse div{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: ball_ellipse_up 2s ease infinite;
+            animation: ball_ellipse_up 2s ease infinite;
+}
+.ball_ellipse div:nth-child(1){
+    left: 0;
+    right: 0;
+}
+.ball_ellipse div:nth-child(2){
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.ball_ellipse div:nth-child(3){
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.ball_ellipse div:nth-child(4){
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.ball_ellipse div:nth-child(5){
+    background-color: red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@keyframes ball_ellipse_parent{
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%{
+        width: 40px;
+        height: 40px;
+        -webkit-transform: rotate(360DEG);
+                transform: rotate(360DEG);
+    }
+}
+@keyframes ball_ellipse_up{
 
+}
+@keyframes ball_ellipse_down{
+
+}
 
 
