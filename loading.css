@@ -1169,8 +1169,8 @@
     margin: auto;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    -webkit-animation: ball_ellipse_parent 2.4s ease infinite;
-            animation: ball_ellipse_parent 2.4s ease infinite;
+    -webkit-animation: ball_ellipse_parent 2.4s linear infinite;
+            animation: ball_ellipse_parent 2.4s linear infinite;
 }
 .ball_ellipse div{
     width: 40px;
@@ -1181,30 +1181,36 @@
     position: absolute;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    -webkit-animation: ball_ellipse_up 2s ease infinite;
-            animation: ball_ellipse_up 2s ease infinite;
 }
 .ball_ellipse div:nth-child(1){
     left: 0;
     right: 0;
+    -webkit-animation: ball_ellipse_up 2.4s linear infinite;
+            animation: ball_ellipse_up 2.4s linear infinite;
 }
 .ball_ellipse div:nth-child(2){
     top: 0;
     bottom: 0;
     right: 0;
+    -webkit-animation: ball_ellipse_down 2.4s linear infinite;
+            animation: ball_ellipse_down 2.4s linear infinite;
 }
 .ball_ellipse div:nth-child(3){
     left: 0;
     bottom: 0;
     right: 0;
+    -webkit-animation: ball_ellipse_up 2.4s linear infinite;
+            animation: ball_ellipse_up 2.4s linear infinite;
 }
 .ball_ellipse div:nth-child(4){
     top: 0;
     bottom: 0;
     left: 0;
+    -webkit-animation: ball_ellipse_down 2.4s linear infinite;
+            animation: ball_ellipse_down 2.4s linear infinite;
 }
 .ball_ellipse div:nth-child(5){
-    background-color: red;
+    background-color: transparent;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1215,18 +1221,38 @@
         -webkit-transform: rotate(0);
                 transform: rotate(0);
     }
-    100%{
+    10%{
+        width: 120px;
+        height: 120px;
+    }
+    66%{
         width: 40px;
         height: 40px;
+    }
+    100%{
         -webkit-transform: rotate(360DEG);
                 transform: rotate(360DEG);
     }
 }
 @keyframes ball_ellipse_up{
-
+    66% {
+        opacity: .1;
+        height: 40px;
+    }
+    77% {
+        opacity: 1;
+        height: 0;
+    }
 }
 @keyframes ball_ellipse_down{
-
+    66% {
+        opacity: .1;
+        width: 40px;
+    }
+    77% {
+        opacity: 1;
+        width: 0;
+    }
 }
 
 
