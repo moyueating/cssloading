@@ -74,8 +74,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            <state relative-caret-position="26">
+              <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -260,7 +260,7 @@
       <workItem from="1497423812335" duration="5417000" />
       <workItem from="1497509409681" duration="7558000" />
       <workItem from="1497597047633" duration="2867000" />
-      <workItem from="1497924566653" duration="427000" />
+      <workItem from="1497924566653" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="第三第四">
       <created>1496896669540</created>
@@ -409,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497598684587</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="README">
+      <created>1497925013490</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1497925013490</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63063000" />
+    <option name="totallyTimeSpent" value="63165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -477,7 +484,8 @@
     <MESSAGE value="change position" />
     <MESSAGE value="border-radius" />
     <MESSAGE value="21" />
-    <option name="LAST_COMMIT_MESSAGE" value="21" />
+    <MESSAGE value="README" />
+    <option name="LAST_COMMIT_MESSAGE" value="README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -977,8 +985,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        <state relative-caret-position="26">
+          <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
           <folding />
         </state>
       </provider>
